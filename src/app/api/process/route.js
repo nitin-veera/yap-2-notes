@@ -11,6 +11,17 @@ const ALLOWED_TYPES = [
   "audio/x-m4a",
 ];
 
+// Explicitly set Node.js runtime - better for file processing and OpenAI API calls
+export const runtime = 'nodejs';
+
+// Increase the maximum request size if needed
+export const config = {
+  api: {
+    bodyParser: false,
+    responseLimit: '50mb',
+  },
+};
+
 export async function POST(request) {
   console.log("Received POST request to /api/process");
 
