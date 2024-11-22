@@ -1,17 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Yap 2 Notes
+
+Yap 2 Notes is a web application that allows students to upload lecture videos or audio recordings and generate neatly formatted Markdown notes. The notes can be viewed directly in the browser or downloaded as a Markdown file, enabling easy study and review.
+
+## Features
+
+1. **Upload Lecture Media**: Users can upload video or audio files of lectures.
+2. **Transcription**: Utilize (mocked) Whisper to convert uploaded media into text.
+3. **Markdown Generation**: Use (mocked) GPT-4o to format the transcribed text into clean Markdown notes.
+4. **View and Download Notes**: Easily view the generated Markdown within the browser and download it for offline access.
+5. **Clear Inputs**: Reset the application to upload new files and generate fresh notes.
 
 ## Getting Started
 
-First, run the development server:
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v14 or later)
+- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/yourusername/lecture-notes-converter.git
+   cd lecture-notes-converter
+   ```
+
+2. **Install dependencies**
+
+   Using npm:
+
+   ```bash
+   npm install
+   ```
+
+   Or using Yarn:
+
+   ```bash
+   yarn install
+   ```
+
+### Running the Development Server
+
+Start the development server with one of the following commands:
+
+Using npm:
 
 ```bash
 npm run dev
-# or
+```
+
+Or using Yarn:
+
+```bash
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
