@@ -55,7 +55,7 @@ export async function POST(request) {
 
     // Initialize OpenAI
     const openai = new OpenAI();
-    openai.apiKey = process.env.OPENAI_API_KEY;
+    openai.apiKey = process.env.OPENAI_API_KEY
 
     // Process the file with OpenAI
     const transcriptionResponse = await openai.audio.transcriptions.create({
